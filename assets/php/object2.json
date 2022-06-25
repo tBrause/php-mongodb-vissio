@@ -1,10 +1,10 @@
 {
     "_id": {
-        "$oid": "62b4db27cc796bcc2c6e55dc"
+        "$oid": "62b4f8d1cc796bcc2c6e55e1"
     },
-    "id": "1",
-    "devicetype": "1",
-    "Name": "Name",
-    "Type": "Typ",
-    "IP": "IP Adresse"
+    "id": "2",
+    "Name": "Drucker 7R",
+    "devicetype": "Drucker",
+    "Type": "Tintenstrahldrucker",
+    "IP": "192.168.178.24"
 }

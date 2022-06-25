@@ -26,7 +26,7 @@ require("ini/inc.php");
         <h1>MongoDB and PHP</h1>
         <?php
         require("view/check-collection.php");
-        checkCollection($connection_cluster, $collection, $data, $error_msg);
+
         #require("view/get-collection.php");
         #require("view/set-collection.php");
         ?>

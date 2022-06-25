@@ -8,7 +8,6 @@ if (!isset($correct)) {
 $collection = 'vissio';
 $data = 'device';
 
-########################
 function checkCollection($connection_cluster, $collection, $data, $error_msg)
 {
     # Container
@@ -33,8 +32,10 @@ function checkCollection($connection_cluster, $collection, $data, $error_msg)
             $container .= '<span class="name">Spalten :</span> ' . count($array) . '<br>';
 
             foreach ($array as $key => $value) {
-                $container .= '<span class="name">' . $key . '</span>';
-                $container .= ' ' . $value . '<br>';
+                if ($key != '_id' and $key != 'id') {
+                    $container .= '<span class="name">' . $key . '</span>';
+                    $container .= ' ' . $value . '<br>';
+                }
             }
 
             $container .= '<br><br>';
@@ -57,3 +58,5 @@ function checkCollection($connection_cluster, $collection, $data, $error_msg)
     echo '<h3>Ergebnisse :</h3>';
     echo '' . $container . '<br>';
 }
+
+checkCollection($connection_cluster, $collection, $data, $error_msg);
