@@ -1,6 +1,5 @@
 <?php
 # init
-$correct = 'yes';
 require("assets/php/mongodb-check.php");
 require("ini/inc.php");
 ?>
@@ -26,7 +25,6 @@ require("ini/inc.php");
         <h1>MongoDB and PHP</h1>
         <?php
         require("view/check-collection.php");
-
         #require("view/get-collection.php");
         #require("view/set-collection.php");
         ?>

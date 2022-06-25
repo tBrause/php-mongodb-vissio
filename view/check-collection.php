@@ -1,10 +1,5 @@
 <?php
-# save single request
-if (!isset($correct)) {
-    die();
-}
-
-# Collection und Daten
+# Collection and Data
 $collection = 'vissio';
 $data = 'device';
 

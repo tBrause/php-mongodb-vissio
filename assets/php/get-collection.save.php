@@ -1,8 +1,4 @@
 <?php
-# no single request
-if (!isset($correct)) {
-    die();
-}
 
 /**
  * 
